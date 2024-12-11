@@ -1,0 +1,26 @@
+/* CSS para responsividade do tamanho das fontes dos paragrafos e dos titulos */
+
+h1 {
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.4em;
+    text-indent: 2em;
+    text-align: justify;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 452px) {
+    h1 {
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+}
