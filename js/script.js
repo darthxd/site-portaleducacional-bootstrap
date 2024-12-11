@@ -1,6 +1,6 @@
 // Criação das constantes do DOM
-const themeBtn = document.getElementById('themeBtn');   // Botão que ativa o dropdown para mudança de tema
-const themeOptions = document.querySelectorAll('.themeOption'); // Lista que contem os botões de tema "claro" e "escuro"
+const themeBtn = document.getElementById('theme-button');   // Botão que ativa o dropdown para mudança de tema
+const themeOptions = document.querySelectorAll('.theme-option'); // Lista que contem os botões de tema "claro" e "escuro"
 
 // Adicionando enventos em cada um dos botões de tema (claro e escuro)
 themeOptions.forEach(option => {
