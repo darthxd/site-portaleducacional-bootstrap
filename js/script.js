@@ -3,12 +3,12 @@ const themeBtn = document.getElementById('themeBtn');   // Botão que ativa o dr
 const themeOptions = document.querySelectorAll('.themeOption'); // Lista que contem os botões de tema "claro" e "escuro"
 
 // Adicionando enventos em cada um dos botões de tema (claro e escuro)
-for(let [i, option] of themeOptions.entries()){
-   option.addEventListener('click', () => {changeTheme(option.id,option.text)})    // Adicionando o evento "click" para cada um dos botões
-}
+themeOptions.forEach(option => {
+    option.addEventListener('click', () => {changeTheme(option.id)})    // Adicionando o evento "click" para cada um dos botões
+})
 
 // Criando a função changeTheme, que controla o tema da página (claro ou escuro)
-function changeTheme(theme,text) {  // Os parâmetros necessários são o valor do tema (light / dark) e o nome do tema (Claro / Escuro). Ambos são selecionados do elemento HTML
+function changeTheme(theme) {  // O parâmetro necessário é o valor do tema (light / dark)
 
     document.documentElement.setAttribute('data-bs-theme',theme);   // Alterando o tema da página para o tema selecionado
     localStorage.setItem('theme',theme);    // Salvando no armazenamento local uma variável para guardar o tema selecionado
