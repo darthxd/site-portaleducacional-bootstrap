@@ -11,6 +11,20 @@ p {
 label {
     font-size: 1.4em;
 }
+
+.produto-title-left {
+    text-align: left;
+}
+.produto-title-right {
+    text-align: right;
+}
+
+@media (max-width: 1200px) {
+    .produto-title-left, .produto-title-right {
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 1.8em;
