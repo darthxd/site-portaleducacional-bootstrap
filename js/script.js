@@ -1,4 +1,6 @@
-// Criação das constantes do DOM
+// Tema claro / escuro
+
+// Definindo as constantes a serem utilizadas
 const themeBtn = document.getElementById('theme-button');   // Botão que ativa o dropdown para mudança de tema
 const themeOptions = document.querySelectorAll('.theme-option'); // Lista que contem os botões de tema "claro" e "escuro"
 
@@ -39,3 +41,36 @@ window.onload = () => {
         }
     });
 }
+
+
+
+
+
+// Validação do formulário de contato
+
+
+// Definindo as constantes a serem utilizadas
+
+const forms = document.querySelectorAll('.needs-validation')
+
+const inputEmail = document.getElementById('input-email');
+const emailFeedback = document.getElementById('input-emailFeedback');
+
+inputEmail.addEventListener('input', () => {
+    if(inputEmail.value === '') {
+        emailFeedback.innerHTML = 'O campo e-mail não pode estar vazio.'
+    } else if(!inputEmail.value.includes('@')){
+        emailFeedback.innerHTML = 'Insira um e-mail válido.'
+    }
+})
+
+// Validação pelo bootstrap
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+    form.classList.add('was-validated')
+  }, false)
+})
