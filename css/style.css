@@ -19,7 +19,7 @@ label {
     text-align: right;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
     .produto-title-left, .produto-title-right {
         text-align: center;
     }
