@@ -11,20 +11,15 @@ p {
 label {
     font-size: 1.4em;
 }
-
-.produto-title-left {
-    text-align: left;
+p.text-paragraph {
+    font-size: 1.25em;
 }
-.produto-title-right {
-    text-align: right;
+th {
+    font-size: 1em;
 }
-
-@media (max-width: 991px) {
-    .produto-title-left, .produto-title-right {
-        text-align: center;
-    }
+td {
+    font-size: 1.25em;
 }
-
 @media (max-width: 768px) {
     h1 {
         font-size: 1.8em;
@@ -32,7 +27,12 @@ label {
     p {
         font-size: 1.2em;
     }
-
+    p.text-paragraph {
+        font-size: 1.15em;
+    }
+    td {
+        font-size: 1.2em;
+    }
 }
 @media (max-width: 452px) {
     h1 {
@@ -41,8 +41,17 @@ label {
     p {
         font-size: 1.1em;
     }
+    p.text-paragraph {
+        font-size: 1.1em;
+    }
     label {
         font-size: 1.1em;
+    }
+    th {
+        font-size: .5em;
+    }
+    td {
+        font-size: 1em;
     }
 }
 @media (max-width: 386px) {
